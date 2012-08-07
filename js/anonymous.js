@@ -47,12 +47,12 @@
 
 	}
 
-	$.fn.anonymouswriter = function ( inputId ) {
+	$.fn.anonymouswriter = function ( inputId, initialValue ) {
 		// Create writer 
 		var writer = new AnonymousWriter(this)
 		var $this = $(this);
 		//Create hidden text area for inputId
-		$this.after("<textarea id='"+inputId+"' cols='999' class='hidden_anonimous_typwriter'></textarea>")
+		$this.after("<textarea id='"+inputId+"' cols='999' class='hidden_anonimous_typwriter'>"+(initialValue || '')+"</textarea>")
 		var input = $("#"+inputId);
 		input.keyup(function(e){
 			writer.update($(this).val())		
