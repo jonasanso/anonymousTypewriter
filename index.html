@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Anonimous message</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anonymous message. >
+    <meta name="author" content="Anonymous">
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>	
+  <header>
+	<h1>Anonymous message</h1>
+  </header>
+  <div role="main">
+	  <div id="out"></div>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/anonymous.js"></script>
+  <script > 
+  $(document).ready(function () {
+
+	$("#out").anonymouswriter("in");
+	
+  })
+</script>
+</body>
+</html>

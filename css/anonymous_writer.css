@@ -1,0 +1,18 @@
+textarea.hidden_anonimous_typwriter {
+    position: relative;
+    top: -35px;
+    z-index: -1;
+    border : none;	
+    outline:none;
+    color:white;	
+}
+#cursorAnonymousWriter{position: relative; top: 10px;}
+#cursorAnonymousWriter img {height:30px;}
+span.letter{display:inline-block;padding:10px 10px 10px 10px;margin:10px 10px 0px 0px; font-size:large;font-weight:bold}
+span.letter0{font-family:Arial;background-color:navy;color:white;transform:rotate(3deg);-ms-transform:rotate(3deg);-moz-transform:rotate(3deg);-webkit-transform:rotate(3deg);-o-transform:rotate(3deg);}
+span.letter1{font-family:Arial Black;background-color:red;transform:rotate(3deg);-ms-transform:rotate(3deg);-moz-transform:rotate(3deg);-webkit-transform:rotate(3deg);-o-transform:rotate(3deg);}
+span.letter2{background-color:#f0f0f0;transform:rotate(0deg);-ms-transform:rotate(0deg);-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);-o-transform:rotate(0deg);}
+span.letter3{font-family:Courier New;background-color:black;color:white;transform:rotate(4deg);-ms-transform:rotate(4deg);-moz-transform:rotate(4deg);-webkit-transform:rotate(4deg);-o-transform:rotate(4deg);}
+span.letter4{font-family:Impact;background-color:black;color:red;transform:rotate(0deg);-ms-transform:rotate(0deg);-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);-o-transform:rotate(0deg);}
+span.letter5{background-color:#f0f0f0;color:red;transform:rotate(5deg);-ms-transform:rotate(5deg);-moz-transform:rotate(5deg);-webkit-transform:rotate(5deg);-o-transform:rotate(5deg);}
+
