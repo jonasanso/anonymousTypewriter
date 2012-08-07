@@ -52,16 +52,19 @@
 		var writer = new AnonymousWriter(this)
 		var $this = $(this);
 		//Create hidden text area for inputId
-		$this.after("<textarea id='"+inputId+"' cols='999' class='hidden_anonimous_typwriter'>"+(initialValue || '')+"</textarea>")
+		$this.after("<textarea id='"+inputId+"' cols='999' class='hidden_anonimous_typwriter'></textarea>")
+		
+		// Bind keys to hidden textarea
 		var input = $("#"+inputId);
 		input.keyup(function(e){
 			writer.update($(this).val())		
 		});		    
-		// Bind element to hidden textarea
 		$this.click(function(e){
 			input.focus()
 		})
-		// Autofocus
+		// Autofocus and initial value
+		input.val(initialValue)
+		writer.update(input.val())		
 		input.focus();
   	}
 	})
